@@ -1,22 +1,634 @@
-<form id="contactForm">
-    <input type="text" id="name" placeholder="Tu Nombre" required><br><br>
-    <input type="email" id="email" placeholder="Tu Email" required><br><br>
-    <textarea id="message" placeholder="Tu Mensaje" required></textarea><br><br>
-    <input type="button" value="Enviar" onclick="sendMessage()">
-</form>
+<!DOCTYPE html>
+<html lang="en">
 
-<script>
-function sendMessage() {
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const message = document.getElementById("message").value;
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Raquel Aguilar - Portfolio" />
+    <meta name="keywords"
+        content="blog, business card, creative, creative portfolio, cv theme, online resume, personal, portfolio, professional cv, responsive portfolio, resume, resume theme, vcard" />
+    <meta name="author" content="Raquel Aguilar" />
+    <title>Raquel Aguilar Portfolio</title>
+    <!--favicon-img-->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <!--favicon-img-->
+    <!--main css file should not be removed -->
+    <link rel="stylesheet" href="css/index.css">
+    <!--main css file-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+</head>
 
-    // Simulando el envío del correo (mostrando un mensaje en consola)
-    console.log(`Datos del mensaje:
-    Nombre: ${name}
-    Email: ${email}
-    Mensaje: ${message}`);
+<body>
+    <!--contains all the div-->
+    <div id="all">
+        <!--loader-->
+        <div id="loader">
+            <span class="color">Raquel </span>Aguilar
+        </div>
+        <!--loader-end-->
+        <!--link-screen-->
+        <div id="breaker">
+        </div>
+        <div id="breaker-two">
+        </div>
+        <!--link-screen-->
+        <!--Main-Section-->
+        <!--Navigator-fullscreen-->
+        <div id="navigation-content">
+            <div class="logo">
+                <img src="images/RAS-logo.png" alt="logo">
+            </div>
+            <div class="navigation-close">
+                <span class="close-first"></span>
+                <span class="close-second"></span>
+            </div>
+            <div class="navigation-links">
+                <a href="#" data-text="HOME" id="home-link">HOME</a>
+                <a href="#" data-text="ABOUT" id="about-link">ABOUT</a>
+                <a href="#" data-text="EXPERIENCE" id="blog-link">EXPERIENCE</a>
+                <a href="#" data-text="PORTFOLIO" id="portfolio-link">PORTFOLIO</a>
+                <a href="#" data-text="CONTACT" id="contact-link">CONTACT</a>
+            </div>
+        </div>
+        <!--Navigator-Fullscreen END-->
+        <!--Home Page-->
+        <!--Menubar-->
+        <div id="navigation-bar">
+            <img src="images/RAS-logo.png" alt="logo">
+            <div class="menubar">
+                <span class="first-span"></span>
+                <span class="second-span"></span>
+                <span class="third-span"></span>
+            </div>
+        </div>
+        <!--Menubar End-->
+        <!--Header-->
+        <div id="header">
+            <div id="particles"></div>
+            <div class="header-content">
+                <div class="header-content-box">
+                    <img class="logo-banner" src="images/logo-banner.svg" alt="logo">
+                    <div class="firstline"><span class="color">Raquel </span>Aguilar</div>
+                    <div class="secondline">
+                        I'm a
+                        <span class="txt-rotate color" data-period="1200"
+                            data-rotate='[ " UI UX Expert.", " Web Designer.", "Graphic Artist ." ]'></span>
+                        <span class="slash">|</span>
+                    </div>
+                    <div class="contact">
+                        <a href="Mailto:raguilarsalazar.92@gmail.com"><img src="images/mail.png" alt="email-pic"
+                                class="contactpic"></a>
+                        <a href="Tel:(506)70336935"><img src="images/call.png" alt="phone-pic" class="contactpic"></a>
+                    </div>
+                </div>
+            </div>
+            <!--header image-->
+            <div class="header-image">
+                <img src="images/ras-cover1.png" alt="logo">
+            </div>
+            <!--header image end-->
+        </div>
+        <!--Header End-->
+        <!--HomePage End-->
+        <!--Main-Section End-->
+        <!--about-->
+        <div id="about">
+            <div class="color-changer">
+                <div class="color-selector">
+                    <div class="heading">Custom Colors</div>
+                    <div class="colors">
+                        <ul>
+                            <li>
+                                <a href="#0" class="color-red " title="color-red"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-purple" title="color-purple"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-malt" title="color-malt"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-green" title="color-green"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-blue" title="color-blue"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-orange" title="color-orange"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--about content-->
+            <div id="about-content">
+                <div class="about-header">
+                    About <span class="color">Me</span>
+                    <span class="header-caption">Get to Know <span class="color"> me.</span></span>
+                </div>
+                <div class="about-main">
+                    <div class="about-first-paragraph wow">
+                        <!--about description-->
+                        <span class="about-first-line">
+                            I'm a creative
+                            <span class="color">UI|UX Designer</span>
+                            based in San Jose , Costa Rica </span>
+                        <br>
+                        <span class="about-second-line"> With over 10 years of experience as a professional Graphic &
+                            Web Disigner. Vast knowledge in conceptualizing and creating large-scale digital experiences
+                            and applications. Deep knowledge in branding, web design, social media content and online
+                            advertising. </span>
+                        <div class="cv">
+                            <a href="images/RaquelAguilar-CV.pdf" download="images/RaquelAguilar-CV.pdf"
+                                target="_blank"><button>Download CV</button></a>
+                        </div>
+                    </div>
+                    <!--about picture-->
+                    <div class="about-img">
+                    </div>
+                </div>
 
-    // Puedes agregar aquí código adicional para mostrar un mensaje al usuario
-}
-</script>
+            </div>
+            <!--services start-->
+            <div id="services">
+                <div class="color-changer">
+                    <div class="color-selector">
+                        <div class="heading">Custom Colors</div>
+                        <div class="colors">
+                            <ul>
+                                <li>
+                                    <a href="#0" class="color-red " title="color-red"></a>
+                                </li>
+                                <li>
+                                    <a href="#0" class="color-purple" title="color-purple"></a>
+                                </li>
+                                <li>
+                                    <a href="#0" class="color-malt" title="color-malt"></a>
+                                </li>
+                                <li>
+                                    <a href="#0" class="color-green" title="color-green"></a>
+                                </li>
+                                <li>
+                                    <a href="#0" class="color-blue" title="color-blue"></a>
+                                </li>
+                                <li>
+                                    <a href="#0" class="color-orange" title="color-orange"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--services header-->
+                <div class="services-heading wow">
+                    <span class="color">My</span> Services
+                </div>
+                <!--services header end-->
+                <!--services content-->
+                <div class="services-content">
+                    <div class="service-one service wow">
+                        <div class="service-img">
+                            <img src="images/coding.png" alt="service-one">
+                        </div>
+                        <div class="service-description">
+                            <h2>Creative Design</h2>
+                            <p>Proficient in using design software such as Adobe Creative Suite to create visually
+                                compelling graphics, including logos, infographics, and layouts for print or digital
+                                media.</p>
+                        </div>
+                    </div>
+                    <div class="service-two service wow">
+                        <div class="service-img">
+                            <img src="images/instagram.png" alt="service-two">
+                        </div>
+                        <div class="service-description">
+                            <h2>Web Design</h2>
+                            <p>Proficient in designing user interfaces that are visually appealing, intuitive, and
+                                user-friendly. Creating high-impact project from a mockup to a responsive website.</p>
+                        </div>
+                    </div>
+                    <div class="service-three service wow">
+                        <div class="service-img">
+                            <img src="images/bulb.png" alt="service-three">
+                        </div>
+                        <div class="service-description">
+                            <h2>Social Media</h2>
+                            <p>Skilled in producing engaging and relevant content tailored to different social media
+                                channels, understanding trends, and utilizing multimedia formats effectively.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--services content end-->
+            <!--services end-->
+            <div id="skills">
+                <div class="skills-header">
+                    My <span class="color"> Skills</span>
+                </div>
+                <div class="skills-content " style="text-align: center;">
+                    <div class="skill-html skill">
+                        <div class="skill-text">
+                            <div class="html">
+                                HTML/CSS
+                            </div>
+                        </div>
+                        <div class="html-prog wow prog">
+                            <div class="html-progress wow">95%</div>
+                        </div>
+                    </div>
+                    <div class="skill-html skill">
+                        <div class="skill-text">
+                            <div class="html">
+                                Adobe XD
+                            </div>
+                        </div>
+                        <div class="html-prog wow prog">
+                            <div class="js-progress wow">90%</div>
+                        </div>
+                    </div>
+                    <div class="skill-html skill">
+                        <div class="skill-text">
+                            <div class="html">
+                                Adobe Illustrator
+                            </div>
+                        </div>
+                        <div class="html-prog wow prog">
+                            <div class="adobe-progress wow">95%</div>
+                        </div>
+                    </div>
+                    <div class="skill-html skill">
+                        <div class="skill-text">
+                            <div class="html">
+                                Adobe Photoshop
+                            </div>
+                        </div>
+                        <div class="html-prog wow prog">
+                            <div class="php-progress wow">90%</div>
+                        </div>
+                    </div>
+                    <div class="skill-html skill">
+                        <div class="skill-text">
+                            <div class="html">
+                                WordPress
+                            </div>
+                        </div>
+                        <div class="html-prog wow prog">
+                            <div class="jquery-progress wow">95%</div>
+                        </div>
+                    </div>
+                    <div class="skill-html skill">
+                        <div class="skill-text">
+                            <div class="html">
+                                JavaScript
+                            </div>
+                        </div>
+                        <div class="html-prog wow prog">
+                            <div class="seo-progress wow">80%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--copyright-section You Can Remove After Downloading-->
+            <div class="footer">
+                <div class="footer-text">
+                    <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px"> Raquel Aguilar.
+                    All Rights Reserved.
+                </div>
+            </div>
+            <!--copyright-section-->
+        </div>
+        <!--about end-->
+        <!--portfolio-->
+        <div id="portfolio">
+            <div class="color-changer">
+                <div class="color-selector">
+                    <div class="heading">Custom Colors</div>
+                    <div class="colors">
+                        <ul>
+                            <li>
+                                <a href="#0" class="color-red " title="color-red"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-purple" title="color-purple"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-malt" title="color-malt"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-green" title="color-green"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-blue" title="color-blue"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-orange" title="color-orange"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-header"> <span class="color"> My </span> Portfolio
+                <span class="header-caption"> Some Of My <span class="color"> Works</span></span>
+            </div>
+            <div id="portfolio-content">
+                <div class="portfolio portfolio-first">
+                    <div class="portfolio-imagee portfolio-image1">
+                    </div>
+                    <div class="portfolio-text">
+                        <h2>Web Designing</h2>
+                        <p>The ultimate goal of this web design was to create an empowering and supportive platform that
+                            not only educates users about the Principles of Think and Grow Rich but also helps them
+                            seamlessly integrate these principles into their daily lives for sustained personal and
+                            professional growth.</p>
+                        <div class="button"><a href="https://www.institutotgr.com/" target="_blank"><button><span
+                                        class="index"> View Project<i class="gg-arrow-right"></i></span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio portfolio-second">
+                    <div class="portfolio-imagee portfolio-image2">
+                    </div>
+                    <div class="portfolio-text">
+                        <h2>Rotation Board App</h2>
+                        <p>The creation of an intuitive, visually appealing, and functional interface within the
+                            Rotation Board App. Ensuring a user-friendly experience that effectively guides guests,
+                            coordinates team efforts, and optimizes time management within Car Dealerships.</p>
+                        <div class="button"><a
+                                href="https://play.google.com/store/apps/details?id=com.guesttrek.rotationboard2"
+                                target="_blank"><button><span class="index"> View Project<i
+                                            class="gg-arrow-right"></i></span></button></a></div>
+                    </div>
+                </div>
+
+                <div class="portfolio portfolio-third">
+                    <div class="portfolio-imagee portfolio-image3">
+                    </div>
+                    <div class="portfolio-text">
+                        <h2>WordPress Website</h2>
+                        <p>Vertex Topography WordPress website focuses on creating an aesthetically appealing,
+                            user-friendly, and informative platform that effectively showcases the company's services
+                            and expertise in the field of topography.
+                        </p>
+                        <div class="button"><a href="https://vertextopografia.com/" target="_blank"><button><span
+                                        class="index"> View Project<i class="gg-arrow-right"></i></span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio portfolio-fourth">
+                    <div class="portfolio-imagee portfolio-image4">
+                    </div>
+                    <div class="portfolio-text">
+                        <h2>Branding</h2>
+                        <p>Transform the new image of Huacas Dental Care into a more professional, reliable and
+                            attractive one. I sought to communicate their expertise, care for patients, and commitment
+                            to delivering exceptional dental services.</p>
+                        <div class="button"><a href="https://g.page/r/CQ3ofyNSuTWSEBM" target="_blank"><button><span
+                                        class="index"> View Project<i class="gg-arrow-right"></i></span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio portfolio-fourth">
+                    <div class="portfolio-imagee portfolio-image5">
+                    </div>
+                    <div class="portfolio-text">
+                        <h2>Social Media</h2>
+                        <p>Created visually compelling, brand-consistent, and engaging social media content. My goal was
+                            to enhace TSS Supplement Store's online presence, attracting customers, and driving
+                            engagement with the store's products.</p>
+                        <div class="button"><a href="https://www.instagram.com/thesupplementstorecr/"
+                                target="_blank"><button><span class="index"> View Project<i
+                                            class="gg-arrow-right"></i></span></button></a></div>
+                    </div>
+                </div>
+                <div class="portfolio portfolio-fourth">
+                    <div class="portfolio-imagee portfolio-image6">
+                    </div>
+                    <div class="portfolio-text">
+                        <h2>Rebranding</h2>
+                        <p>Develop a new visual identity that reflects professionalism, expertise, and modernity. This
+                            includes a refreshed logo design, updated color palette, typography, and visual elements
+                            that convey trust and innovation.</p>
+                        <div class="button"><a href="https://www.instagram.com/evillavicenciolaw/"
+                                target="_blank"><button><span class="index"> View Project<i
+                                            class="gg-arrow-right"></i></span></button></a></div>
+                    </div>
+                </div>
+            </div>
+            <!--copyright-section You Can Remove After Downloading-->
+            <div class="footer">
+                <div class="footer-text">
+                    <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px"> Raquel Aguilar.
+                    All Rights Reserved.
+                </div>
+            </div>
+            <!--copyright-section-->
+        </div>
+        <!--portfolio end-->
+        <!--blog-->
+        <div id="blog">
+            <div class="color-changer">
+                <div class="color-selector">
+                    <div class="heading">Custom Colors</div>
+                    <div class="colors">
+                        <ul>
+                            <li>
+                                <a href="#0" class="color-red " title="color-red"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-purple" title="color-purple"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-malt" title="color-malt"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-green" title="color-green"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-blue" title="color-blue"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-orange" title="color-orange"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-header">Work Experience</span>
+                <span class="header-caption"> Years of experience: <span class="color">10+ years</span></span>
+            </div>
+            <div class="blog-content">
+                <div class="blogs">
+                    <a href="#">
+                        <div class="img">
+                            <img src="images/experience-1.jpeg" alt="blog-one">
+                            <div class="blog-date">2016-NOW</div>
+                        </div>
+                        <div class="blog-text">
+                            <h3>eleaderTech Inc.</h3>
+                            <p>Responsible of designing new websites and mobile apps that comply with user requirements
+                                in collaboration with product managers and engineers. Developed new and existing
+                                features to improve the User Experience in e-commerce websites and maximizes its
+                                usability. Created video and graphic marketing material for digital products.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="blogs">
+                    <a href="#">
+                        <div class="img">
+                            <img src="images/experience-2.png" alt="blog-two">
+                            <div class="blog-date">2014-2016</div>
+                        </div>
+                        <div class="blog-text">
+                            <h3>International Telecom</h3>
+                            <p>Developed Web Templates from scratch, design emails, landing pages, banners, different
+                                promos and contests to increment websites visits. Responsible of the CMS websites
+                                maintenance using Joomla,
+                                Word Press and creating themes plus templates for these platforms.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="blogs">
+                    <a href="#">
+                        <div class="img">
+                            <img src="images/experience-3.png" alt="blog-three">
+                            <div class="blog-date">2013-2014</div>
+                        </div>
+                        <div class="blog-text">
+                            <h3>JUPA Social Strategy</h3>
+                            <p>Implemented creative and successful Social Media designing campaigns. In charged of
+                                creating the arts for clients like House of Marley, Arenas Skate and Surf, Ofertel S.A,
+                                Tiendas Ekono and El Patio Food & Pub based on Social Media Strategies.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="blogs">
+                    <a href="#">
+                        <div class="img">
+                            <img src="images/experience-4.png" alt="blog-four">
+                            <div class="blog-date">2012-2013</div>
+                        </div>
+                        <div class="blog-text">
+                            <h3>Yuplon- Grupo Nacion Digital</h3>
+                            <p>Created Yu pion's daily promos page in La Nacion, Al Dia and La Teja Newsletters.
+                                Designed daily banners of the website and Social Media content.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!--copyright-section You Can Remove After Downloading-->
+            <div class="footer">
+                <div class="footer-text">
+                    <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px"> Raquel Aguilar.
+                    All Rights Reserved.
+                </div>
+            </div>
+            <!--copyright-section-->
+        </div>
+        <!--blog end-->
+        <!--contact-->
+        <div id="contact">
+            <div class="color-changer">
+                <div class="color-selector">
+                    <div class="heading">Custom Colors</div>
+                    <div class="colors">
+                        <ul>
+                            <li>
+                                <a href="#0" class="color-red " title="color-red"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-purple" title="color-purple"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-malt" title="color-malt"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-green" title="color-green"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-blue" title="color-blue"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-orange" title="color-orange"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-header">Contact <span class="color"> Me</span>
+                <div class="contact-header-caption"> <span class="color"> Get</span> In Touch.</div>
+            </div>
+            <div class="contact-content">
+                <!--Contact form-->
+                <div class="contact-form">
+                    <div class="form-header">
+                        Message Me
+                    </div>
+                    <form id="myForm" action="#">
+                        <div class="input-line">
+                            <input id="name" type="text" placeholder="Name" class="input-name">
+                            <input id="email" type="email" placeholder="Email" class="input-name">
+                        </div>
+                        <input type="text" id="subject" placeholder="Subject" class="input-subject">
+                        <textarea id="body" class="input-textarea" placeholder="Message"></textarea>
+                        <button type="button" id="submit" value="send">Submit</button>
+                    </form>
+
+                </div>
+                <!--Contact form-->
+                <!--Contact information-->
+                <div class="contact-info">
+                    <div class="contact-info-header">
+                        Contact Info
+                    </div>
+                    <div class="contact-info-content">
+                        <div class="contect-info-content-line">
+                            <img src="./images/icon-name.png" class="icon" alt="name-icon">
+                            <div class="contact-info-icon-text">
+                                <h6>Name</h6>
+                                <p>Raquel Aguilar Salazar</p>
+                            </div>
+                        </div>
+                        <div class="contect-info-content-line">
+                            <img src="./images/icon-location.png" class="icon" alt="location-icon">
+                            <div class="contact-info-icon-text">
+                                <h6>Location</h6>
+                                <p>San José, Costa Rica</p>
+                            </div>
+                        </div>
+                        <div class="contect-info-content-line">
+                            <img src="./images/icon-phone.png" class="icon" alt="phone-icon">
+                            <div class="contact-info-icon-text">
+                                <h6>Call</h6>
+                                <p>(+506) 7033-6935</p>
+                            </div>
+                        </div>
+
+                        <div class="contect-info-content-line">
+                            <img src="./images/icon-email.png" class="icon" alt="email-icon">
+                            <div class="contact-info-icon-text">
+                                <h6>Email</h6>
+                                <p>raguilarsalazar.92@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Contact information end-->
+                </div>
+            </div>
+            <!--copyright-section You Can Remove After Downloading-->
+            <div class="footer">
+                <div class="footer-text">
+                    <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px"> Raquel Aguilar.
+                    All Rights Reserved.
+                </div>
+            </div>
+            <!--copyright-section-->
+        </div>
+        <!--contact end-->
+    </div>
+    <!--all the divisions-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+
+
+</body>
+
+</html>
