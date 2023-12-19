@@ -565,12 +565,12 @@
                     </div>
                     <form id="myForm" action="https://formspree.io/f/xqkrzbgw" method="POST">
                         <div class="input-line">
-                            <input id="name" type="text" placeholder="Name" class="input-name">
-                            <input id="email" type="email" placeholder="Email" class="input-name">
+                            <input id="name" type="text" name="name" placeholder="Name" class="input-name">
+                            <input id="email" type="email" name="email" placeholder="Email" class="input-name">
                         </div>
-                        <input type="text" id="subject" placeholder="Subject" class="input-subject">
-                        <textarea id="body" class="input-textarea" placeholder="Message"></textarea>
-                        <button type="button" id="submit" value="send">Submit</button>
+                        <input type="text" id="subject" placeholder="Subject" class="input-subject" name="subject">
+                        <textarea id="body" class="input-textarea" placeholder="Message" name="message"></textarea>
+                        <button type="submit" id="submit" value="send">Submit</button>
                     </form>
 
                 </div>
