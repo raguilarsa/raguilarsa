@@ -1,11 +1,22 @@
-<html>
-    
-    <form id="contactForm">
-        <input type="text" id="name" placeholder="Tu Nombre" required><br><br>
-        <input type="email" id="email" placeholder="Tu Email" required><br><br>
-        <textarea id="message" placeholder="Tu Mensaje" required></textarea><br><br>
-        <input type="submit" value="Enviar">
-    </form>
-    
-</html>
+<form id="contactForm">
+    <input type="text" id="name" placeholder="Tu Nombre" required><br><br>
+    <input type="email" id="email" placeholder="Tu Email" required><br><br>
+    <textarea id="message" placeholder="Tu Mensaje" required></textarea><br><br>
+    <input type="button" value="Enviar" onclick="sendMessage()">
+</form>
 
+<script>
+function sendMessage() {
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+
+    // Simulando el envío del correo (mostrando un mensaje en consola)
+    console.log(`Datos del mensaje:
+    Nombre: ${name}
+    Email: ${email}
+    Mensaje: ${message}`);
+
+    // Puedes agregar aquí código adicional para mostrar un mensaje al usuario
+}
+</script>
