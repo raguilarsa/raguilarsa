@@ -1085,6 +1085,13 @@ button:hover .index {
     position: relative;
     overflow: hidden;
 }
+.portfolio-image7 {
+    background: url(../images/portfolio-8.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
 
 #portfolio {
     display: none;
